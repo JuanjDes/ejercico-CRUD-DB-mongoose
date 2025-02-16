@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes/task.js');
+const routes = require('./routes/taskRoutes.js');
 
 const port = 3000;
 
-// Cargamos el middleware de express.json() para que pueda leer los datos de las peticiones en formato JSON
-
+// Cargamos el middleware de express.json() y urlencoded() para que pueda leer los datos de las peticiones en formato JSON
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // Creamos constante dbConnection, que extrae del objeto dbConnection la propiedad (funcion) dbConnection
