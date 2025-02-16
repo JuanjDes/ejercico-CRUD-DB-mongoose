@@ -1,3 +1,8 @@
+1. Carpeta img_postman contiene pantallazos de como se han hecho las pruebas con Postman
+2. taskController.js en carpeta controllers: ejemplo de separar las funciones de crear, borrar, actualizar... para que taskRoutes.js
+tenga un código más limpio y legible.
+
+
 # CRUD DE TAREAS CON MONGOOSE
 
 Esta es una aplicación sencilla en Node.js utilizando Express con mongoose y Atlas para crear una API de tareas, donde podras crear, ver tareas, actulizar y borrarlas.
